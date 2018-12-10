@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FavouriteToggle from './FavouriteToggle';
 
-const Post = ({ data }) => (
-  <li
+const Post = ({ data }) => {
+  const [isBody, setIsBody] =  useState(false);
+
+  return (
+    <li
     style={{
       backgroundColor: 'white',
       color: '#333',
@@ -12,10 +15,15 @@ const Post = ({ data }) => (
       cursor: 'pointer'
     }}
   >
-    <span style={{ fontWeight: '900' }}>{data.title}</span>
+    <span style={{ fontWeight: '900' }} onClick={() => setIsBody(!isBody)}>
+    {
+      isBody ? data.body : data.title 
+    }
+    </span>
 
     <FavouriteToggle style={{ float: 'right' }} />
   </li>
-);
+  )
+}
 
 export default Post;
