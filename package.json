@@ -112,5 +112,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.7.0-alpha.2"
   }
 }

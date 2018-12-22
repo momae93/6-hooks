@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Post from './Post';
 
-
-// Use effect : we need to put an array at the end to stop the fetching
-// Appeler l'url
 const PostsList = ({ posts = [] }) => {
   const [fetchedPosts, setFetchedPosts] = useState(posts);
   const inputTitle = useRef(null);
