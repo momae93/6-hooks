@@ -10,3 +10,6 @@ Notes:
 
 - you are free to add as much components as you wish, as long as you do not use any class in your code.
 - https://emojipedia.org is a good reference when you do not want to loose time creating/searching/bundling icons 😁
+
+
+/!\ Careful if project won't launch please do : yarn add react@next then yarn add -D react-test-renderer@next
